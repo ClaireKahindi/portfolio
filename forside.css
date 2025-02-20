@@ -175,17 +175,17 @@ button:hover {
 
 /* Tekst styling */
 .velkomst-tekst h1 {
-    font-size: 7.5vw;
+    font-size: 6.5vw;
     line-height: 1.3;
     font-weight: 600;
-    margin: 100px 130px 10px 200px;
+    margin: 150px 130px 10px 150px;
 }
 
 .velkomst-tekst h2 {
     font-size: 3.2vw;
     margin-top: 10px;
     font-style: italic;
-    margin-left: 200px;
+    margin-left: 150px;
     font-weight: lighter;
     font-size: 45px;
 }
@@ -239,7 +239,7 @@ button:hover {
 
 .introduktion img{
     max-width: 50vh;
-    margin: 70px 100px 100px 170px;
+    margin: 70px 100px 100px 150px;
 }
 
 .introduktion h2{
@@ -267,7 +267,7 @@ button:hover {
 
 .indhold h2{
     font-weight: bold;
-    font-size: 5vh;
+    font-size: 4vh;
     margin-left: 20px;
 }
 
@@ -291,6 +291,8 @@ button:hover {
 footer{
     background-color: var(--kontrast-farve);
     padding: 5%;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+
  }
 
 /* Styling - footer */
