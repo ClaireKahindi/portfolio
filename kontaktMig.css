@@ -175,7 +175,7 @@ body {
 #bloopers{
     position: relative;
     z-index: 1;
-    margin: 0px 0px 0px 700px;
+    padding: 0px 0px 0px 700px;
     font-family: 'mr-gabe', sans-serif;
     font-style: italic;
     display: flex;
@@ -225,6 +225,7 @@ footer{
 /* Styling - underpunkter, i kolonnerne*/
 .kolonne p {
     padding-top: 12px; /*Afstand mellem teksterne*/
+    font-size: 15px;
 }
 
 .kolonne p a {
