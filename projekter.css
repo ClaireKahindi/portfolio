@@ -171,11 +171,18 @@ body {
 
 /* Grid med projekter */
 
+.h-side-wrapper {
+    width: 123vw;
+    height: 100vh;
+    background-color: var(--kontrast-farve);
+}
 
 .h-side{
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--kontrast-farve);
+    width: 100%;
+    height: fit-content;
+    gap: 10px;
 }
 
 .h-side img:hover {
@@ -184,7 +191,19 @@ body {
 
 /*Justerer billede størrelser */
 
-#nipponImg{
+.projekt-link-venstre {
+    flex: 0 0 calc(63.2% - 10px);
+}
+
+.projekt-link-hoejre {
+    flex: 0 0 calc(36.5% - 10px);
+}
+
+.h-side img {
+    width: 100%;
+}
+
+/* #nipponImg{
     max-width: 54vh;
 }
 
@@ -199,7 +218,7 @@ body {
 
 #scImg{
     height: 36vh;
-}
+} */
 
 
 
