@@ -180,6 +180,7 @@ button:hover {
 
 .v-side1{
     margin: 110px 0px 0px 120px;
+    width: 50vw;
 }
 
 .v-side1 p{
@@ -210,6 +211,7 @@ button:hover {
     flex: 1; /* Fylder halvdelen af containeren */
     background-color: var(--kontrast-farve); /* Gul farve */
     padding: 0px 0px 0px 70px;
+    width: 50vw;
 }
 .h-side1 p{
     margin-top: 40px;

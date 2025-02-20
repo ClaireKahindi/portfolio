@@ -179,7 +179,6 @@ button:hover {
 }
 
 .v-side1{
-    flex: 1; /* Fylder halvdelen af containeren */
     background-color: var(--kontrast-farve); /* Gul farve */
     padding: 90px 100px 0px 60px;
 }
@@ -246,7 +245,6 @@ button:hover {
 }
 
 .h-side2, .h-side3{
-    flex: 1; /* Fylder halvdelen af containeren */
     background-color: var(--kontrast-farve); /* Gul farve */
     padding: 0px 0px 0px 115px;
 }
@@ -256,6 +254,14 @@ button:hover {
     padding: 60px 60px 0px 0px;
 }
 
+.h-side1,
+.h-side2,
+.h-side3,
+.v-side1,
+.v-side2,
+.v-side3 {
+    width: 50vw !important;
+}
 
 
 /*Styling af billederne ved proces*/
