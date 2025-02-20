@@ -1,0 +1,338 @@
+/*   GRUNDLÆGGENDE STYLING  */
+
+/*Resetter grundlæggende styling*/
+* {
+    margin: 0; /* Fjerner al margin og padding */
+    padding: 0;
+    line-height: 2;
+    color: #000; /*Sætter skriftfarven til sort*/
+}
+
+
+/*Definerer min variabler i en root*/
+
+:root {
+    --baggrunds-farve: #FFFAEB;
+    --kontrast-farve: #FFEFBC;
+    --cta-farve: #EED584; 
+    --hover-farve: #B28D4A;
+    --h1-font-family: 'mr-gabe', sans-serif;
+    --h2-font-family: 'mr-gabe', sans-serif;
+    --h3-font-family: 'Neue',sans-serif;
+    --skriftfarve: #000;
+  }
+
+
+
+/*Tilpasser vægt og størrelse*/
+
+h2 {
+    font-weight: bold;
+    font-size: 100px; 
+}
+
+h3{
+    font-weight: 75;
+}
+  
+p {
+    font-family: 'Neue', sans-serif;
+    font-weight: 45;
+}
+
+/* Styler bodyen*/
+body {
+    background-color: var(--baggrunds-farve);
+    overflow-x: hidden; /* Sørger for man ikke kan scroll horisontalt*/
+  }
+
+
+/* Styler knapperne */
+button {
+    background-color: var(--cta-farve); 
+    color: #333; 
+    padding: 10px 110px; 
+    border: none; 
+    border-radius: 50px; 
+    font-size: 16px; 
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s ease; /* Tilføjer en transition, for at muliggøre hover */
+}
+
+/* Tilføjer hover funktion */
+button:hover {
+    background-color: var(--hover-farve); /*Vælger farven den ændres til ved hover*/
+    color: #FFF;
+}
+
+
+  
+
+  .forside-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+/*    NAVIGATIONS'BAR'   */
+
+/* Styler selve knappen */
+.menu-knap {
+    position: absolute; /* Placer knappen absolut i forhold til nærmeste forælder */
+    top: 30px; /* Placerer burgermenuen */
+    left: 30px; /* -//- */
+    cursor: pointer; /* Ændrer markøren til en hånd ved hover */
+    z-index: 100; /* Giver det et Z-index, så det placeres øverst */
+    position: fixed; /* Sørger for knappen følger med, når man scroller */
+}
+
+/* Styler linjerne på knappen */
+.menu-knap .linje {
+    width: 30px; /* Styler linjerne, på burgermenuen */
+    height: 2px; /* -//- */
+    background-color: #000; /* Vælger farve */
+    margin: 7px 0; /* Tilføjer margin øverst, mellem linjerne */
+    transition: 0.4s;
+}
+
+/* Skjuler menuen som standard */
+.menu {
+    display: none; /* Menu skjules som standard */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--kontrast-farve); /* Baggrundsfarve */
+    z-index: 99;
+    padding: 50px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Viser menuen, når klassen "vis" tilføjes */
+.menu.vis {
+    display: block;
+}
+
+/* Styling af menu punkterne */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Neue',sans-serif;
+    font-weight: lighter;
+    color: #333;
+}
+
+/* Effekter - hover */
+.menu ul li :hover {
+    transform: scale(1.04); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+}
+
+
+/* Ændring for at indikere, at menuen er åben */
+.menu-knap.aktiv .linje {
+    background-color: var(--hover-farve); /* Ændrer farven på linjerne til kontrastfarven */
+}
+
+/* Animation til linjer */
+.menu-knap.aktiv .linje:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Øverste linje bliver til et kryds */
+}
+
+.menu-knap.aktiv .linje:nth-child(2) {
+    opacity: 0; /* Skjuler midterlinjen */
+}
+
+.menu-knap.aktiv .linje:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Nederste linje bliver til et kryds */
+}
+
+
+
+
+/*    FØRSTE TOUCHPOINT - VIDEO DEL    */
+
+.videoSektion{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+
+/* Tekst styling */
+.velkomst-tekst h1 {
+    font-size: 7.5vw;
+    line-height: 1.3;
+    font-weight: 600;
+    margin: 100px 130px 10px 200px;
+}
+
+.velkomst-tekst h2 {
+    font-size: 3.2vw;
+    margin-top: 10px;
+    font-style: italic;
+    margin-left: 200px;
+    font-weight: lighter;
+    font-size: 45px;
+}
+
+
+    /* Højre side med elevatordør */
+    .elevator-dor {
+        width: 100%;
+        height: 100%;
+        float: right;
+    }
+
+
+  
+  /*Scroll pil*/
+
+  .scroll-pil {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.scroll-pil svg {
+    width: 20px;
+    height: 20px;
+    animation: bounce 2s infinite;
+}
+
+
+
+
+
+/*    ANDET TOUCHPOINT - VELKOMMEN TIL SEKTION   */
+
+.introduktion{
+    display: flex;
+    gap: 60px;
+    height: 100vh;
+}
+
+.v-side{
+    flex: 1; /* Fylder halvdelen af containeren */
+    background-color: var(--kontrast-farve); /* Gul farve */
+}
+
+.h-side{
+    margin: 70px 200px 0px 0px;
+}
+
+.introduktion img{
+    max-width: 50vh;
+    margin: 70px 100px 100px 170px;
+}
+
+.introduktion h2{
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.introduktion p{
+    max-width: 450px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/*    TREDJE TOUCHPOINT - MAPPE DEL   */
+
+.indhold{
+    display: flex;
+    margin: 120px;
+    gap: 100px;
+}
+
+.indhold h2{
+    font-weight: bold;
+    font-size: 5vh;
+    margin-left: 20px;
+}
+
+.indhold img{
+    width: 320px;
+    transition: opacity 0.5s ease;
+}
+
+.indhold img:hover {
+    transform: scale(1.04); /* Forstørrer ved hover */
+}
+
+.indhold p{
+    max-width: 270px;
+    margin-left: 20px;
+}
+
+
+/*    FOOTER   */ 
+
+footer{
+    background-color: var(--kontrast-farve);
+    padding: 5%;
+ }
+
+/* Styling - footer */
+.footer-generelt {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Placering - styrer placeringen af logo*/
+.footer-logo {
+    display: flex;
+    font-size: 100px;
+    margin-right: 100px;
+}
+
+.footer-logo p {
+    font-family: var(--h1-font-family)
+}
+
+/* Placering - kolonnerne med tekst*/
+.kolonne {
+    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen og at hver boks fylder lige meget */
+    text-align: left; /* Venstrejusterer kolonen */
+    padding: 0 40px 0 40px;
+}
+
+
+/* Styling - underpunkter, i kolonnerne*/
+.kolonne p {
+    padding-top: 12px; /*Afstand mellem teksterne*/
+}
+
+.kolonne p a {
+    padding-top: 17px; /*Afstand mellem tekst*/
+    text-decoration: none;
+}
+
+/* Effekter - hover */
+.kolonne p :hover {
+    transform: scale(1.04); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+}
+
+
+/* SIDEN ER VALIDERET - ALT OK! */

@@ -1,0 +1,286 @@
+/*Resetter grundlæggende styling*/
+* {
+    margin: 0;
+    /* Fjerner al margin og padding */
+    padding: 0;
+    line-height: 2;
+    color: #000;
+    /*Sætter skriftfarven til sort*/
+}
+
+
+/*Definerer min variabler i en root*/
+
+:root {
+    --baggrunds-farve: #FFFAEB;
+    --kontrast-farve: #FFEFBC;
+    --cta-farve: #EED584;
+    --hover-farve: #B28D4A;
+    --h1-font-family: 'mr-gabe', sans-serif;
+    --h2-font-family: 'mr-gabe', sans-serif;
+    --h3-font-family: 'Neue', sans-serif;
+    --skriftfarve: #000;
+}
+
+
+/*Tilpasser vægt og størrelse*/
+
+h1 {
+    font-weight: bold;
+    font-size: 90px;
+}
+
+
+
+h2 {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+h3 {
+    font-weight: 75;
+}
+
+h6 {
+    font-family: 'Neue', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+p {
+    font-family: 'Neue', sans-serif;
+    font-weight: 45;
+    font-size: 15px;
+}
+
+/* Styler bodyen*/
+body {
+    background-color: var(--baggrunds-farve);
+    overflow-x: hidden;
+    /* Sørger for man ikke kan scroll horisontalt*/
+}
+
+
+/* Styler knapperne */
+button {
+    background-color: var(--cta-farve);
+    color: #333;
+    padding: 10px 110px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s ease;
+    /* Tilføjer en transition, for at muliggøre hover */
+}
+
+/* Tilføjer hover funktion */
+button:hover {
+    background-color: var(--hover-farve);
+    /*Vælger farven den ændres til ved hover*/
+    color: #FFF;
+}
+
+
+
+
+.forside-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+/*    NAVIGATIONS'BAR'   */
+
+/* Styler selve knappen */
+.menu-knap {
+    position: absolute;
+    /* Placer knappen absolut i forhold til nærmeste forælder */
+    top: 30px;
+    /* Placerer burgermenuen */
+    left: 30px;
+    /* -//- */
+    cursor: pointer;
+    /* Ændrer markøren til en hånd ved hover */
+    z-index: 100;
+    /* Giver det et Z-index, så det placeres øverst */
+    position: fixed;
+    /* Sørger for knappen følger med, når man scroller */
+}
+
+/* Styler linjerne på knappen */
+.menu-knap .linje {
+    width: 30px;
+    /* Styler linjerne, på burgermenuen */
+    height: 2px;
+    /* -//- */
+    background-color: #000;
+    /* Vælger farve */
+    margin: 7px 0;
+    /* Tilføjer margin øverst, mellem linjerne */
+    transition: 0.4s;
+}
+
+/* Skjuler menuen som standard */
+.menu {
+    display: none;
+    /* Menu skjules som standard */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--kontrast-farve);
+    /* Baggrundsfarve */
+    z-index: 99;
+    padding: 50px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Viser menuen, når klassen "vis" tilføjes */
+.menu.vis {
+    display: block;
+}
+
+/* Styling af menu punkterne */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Neue', sans-serif;
+    font-weight: lighter;
+    color: #333;
+}
+
+/* Effekter - hover */
+.menu ul li :hover {
+    transform: scale(1.04);
+    /* Forstørrer ved hover */
+    font-weight: bold;
+    /* Tykkelse på font ved hover */
+}
+
+
+/* Ændring for at indikere, at menuen er åben */
+.menu-knap.aktiv .linje {
+    background-color: var(--hover-farve);
+    /* Ændrer farven på linjerne til kontrastfarven */
+}
+
+/* Animation til linjer */
+.menu-knap.aktiv .linje:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    /* Øverste linje bliver til et kryds */
+}
+
+.menu-knap.aktiv .linje:nth-child(2) {
+    opacity: 0;
+    /* Skjuler midterlinjen */
+}
+
+.menu-knap.aktiv .linje:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    /* Nederste linje bliver til et kryds */
+}
+
+
+
+/* TASKE WRAP STYLING */
+
+.taskeWrap {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.taske {
+    position: relative;
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.taske img {
+    width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.taske img:hover {
+    transform: scale(1.04);
+    /* Forstørrer ved hover */
+}
+
+#taskeLuk {
+    position: absolute;
+    bottom: -5px;
+    margin: 0 auto;
+    font-family: 'mr-gabe', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+
+/* TEKSTER */
+
+.taske article {
+    position: absolute;
+    width: 300px;
+}
+
+#kreativitet {
+    transform: translate(-250px, -250px);
+    text-align: right;
+    width: 350px;
+}
+
+#rejser {
+    transform: translate(400px, -200px);
+    text-align: left;
+}
+
+#musik {
+    transform: translate(500px, 150px);
+    text-align: right;
+}
+
+#traening {
+    transform: translate(250px, 400px);
+    text-align: left;
+}
+
+#familieliv {
+    transform: translate(-250px, 350px);
+    text-align: right;
+    width: 400px;
+}
+
+#struktur {
+    transform: translate(-500px, 50px);
+    text-align: left;
+}
+
+#struktur img, #rejser img, #familieliv img {
+    width: 20vh;
+    margin-bottom: 0px;
+}
+
+#kreativitet img, #musik img, #traening img {
+    width: 15vh;
+    margin-bottom: 0px;
+}

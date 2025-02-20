@@ -1,0 +1,304 @@
+/*Resetter grundlæggende styling*/
+* {
+    margin: 0; /* Fjerner al margin og padding */
+    padding: 0;
+    color: #000; /*Sætter skriftfarven til sort*/
+}
+
+
+/*Definerer min variabler i en root*/
+
+:root {
+    --baggrunds-farve: #FFFAEB;
+    --kontrast-farve: #FFEFBC;
+    --cta-farve: #EED584; 
+    --hover-farve: #B28D4A;
+    --h1-font-family: 'mr-gabe', sans-serif;
+    --h2-font-family: 'mr-gabe', sans-serif;
+    --h3-font-family: 'Neue',sans-serif;
+    --skriftfarve: #000;
+  }
+
+
+/*Tilpasser vægt og størrelse*/
+h1 {
+    font-weight: bold;
+    font-size: 90px; 
+}
+
+
+h2 {
+    font-size: 3.2vw;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 35px;
+}
+
+
+h3{
+    font-weight: 75;
+}
+  
+p {
+    font-family: 'Neue', sans-serif;
+    font-weight: 45;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+/* Styler bodyen*/
+body {
+    background-color: var(--baggrunds-farve);
+    overflow-x: hidden; /* Sørger for man ikke kan scroll horisontalt*/
+  }
+
+
+/* Styler knapperne */
+button {
+    background-color: var(--cta-farve); 
+    color: #333; 
+    padding: 10px 110px; 
+    line-height: 2;
+    border: none; 
+    border-radius: 50px; 
+    font-size: 16px; 
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.3s ease; /* Tilføjer en transition, for at muliggøre hover */
+}
+
+/* Tilføjer hover funktion */
+button:hover {
+    background-color: var(--hover-farve); /*Vælger farven den ændres til ved hover*/
+    color: #FFF;
+}
+
+
+
+
+/*    NAVIGATIONS'BAR'   */
+
+/* Styler selve knappen */
+.menu-knap {
+    position: absolute; /* Placer knappen absolut i forhold til nærmeste forælder */
+    top: 30px; /* Placerer burgermenuen */
+    left: 30px; /* -//- */
+    cursor: pointer; /* Ændrer markøren til en hånd ved hover */
+    z-index: 100; /* Giver det et Z-index, så det placeres øverst */
+    position: fixed; /* Sørger for knappen følger med, når man scroller */
+}
+
+/* Styler linjerne på knappen */
+.menu-knap .linje {
+    width: 30px; /* Styler linjerne, på burgermenuen */
+    height: 2px; /* -//- */
+    background-color: #000; /* Vælger farve */
+    margin: 7px 0; /* Tilføjer margin øverst, mellem linjerne */
+    transition: 0.4s;
+}
+
+/* Skjuler menuen som standard */
+.menu {
+    display: none; /* Menu skjules som standard */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--kontrast-farve); /* Baggrundsfarve */
+    z-index: 99;
+    padding: 50px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Viser menuen, når klassen "vis" tilføjes */
+.menu.vis {
+    display: block;
+}
+
+/* Styling af menu punkterne */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Neue',sans-serif;
+    font-weight: lighter;
+    color: #333;
+}
+
+/* Effekter - hover */
+.menu ul li :hover {
+    transform: scale(1.04); /* Forstørrer ved hover */
+    font-weight: bold; /* Tykkelse på font ved hover */
+}
+
+
+/* Ændring for at indikere, at menuen er åben */
+.menu-knap.aktiv .linje {
+    background-color: var(--hover-farve); /* Ændrer farven på linjerne til kontrastfarven */
+}
+
+/* Animation til linjer */
+.menu-knap.aktiv .linje:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Øverste linje bliver til et kryds */
+}
+
+.menu-knap.aktiv .linje:nth-child(2) {
+    opacity: 0; /* Skjuler midterlinjen */
+}
+
+.menu-knap.aktiv .linje:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Nederste linje bliver til et kryds */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BESKRIVELSE AF MIG DELEN */
+
+.omMig, .taske, .tidslinje, .soegerJeg{
+    display: flex;
+    height: 100vh;
+}
+
+.v-side1{
+    flex: 1; /* Fylder halvdelen af containeren */
+    background-color: var(--kontrast-farve); /* Gul farve */
+    padding: 120px 0px 0px 120px;
+}
+
+.v-side1 p {
+    max-width: 600px;
+}
+
+.h-side1{
+    margin: 70px 200px 0px 300px;
+}
+
+#portraet1{
+    position: absolute;
+    z-index: 1;
+    max-width: 50vh;
+    margin: 100px 30px 30px 850px;
+}
+
+
+/* TASKE DELEN */
+
+.v-side2{
+    margin: 110px 120px 0px 120px;
+}
+
+.v-side2 p{
+    max-width: 50vh;
+}
+
+.h-side2{
+    flex: 1; /* Fylder halvdelen af containeren */
+    background-color: var(--kontrast-farve); /* Gul farve */
+    padding: 0px 100px 0px 165px;
+}
+
+#taske1{
+    width: 65vh;
+    transition: opacity 0.5s ease;
+}
+
+#taske1:hover {
+    transform: scale(1.04); /* Forstørrer ved hover */
+}
+
+
+.klik{
+    font-style: italic;
+    font-family: 'mr-gabe',sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+/* TIDSLINJE DELEN */
+
+.tidslinje img{
+    max-width: 70vh;
+}
+
+.v-side3{
+    flex: 1; /* Fylder halvdelen af containeren */
+    background-color: var(--kontrast-farve); /* Gul farve */
+    padding: 110px 100px 0px 90px;
+}
+
+.h-side3{
+    margin: 70px 330px 0px 50px;
+}
+
+
+
+/*  HVAD SØGER JEG */
+
+.v-side4{
+    margin: 110px 350px 0px 120px;
+}
+
+
+.h-side4{
+    flex: 1; /* Fylder halvdelen af containeren */
+    background-color: var(--kontrast-farve); /* Mørkere gul farve */
+    padding: 100px 50px 0px 120px;
+}
+
+/*Giver teksten whitespace*/
+.h-side4 p{
+    max-width: 80vh;
+}
+
+
+#portraet2{
+    position: absolute;
+    z-index: 1; /*Tilføjer Z-index, så billedet placeres øverst*/
+    max-width: 50vh;
+    margin: 0px 0px 0px 50px;
+}
+
+
+
+/*Programmer*/
+
+.programmer{
+    margin: 120px 0 20px 60px;
+}
+
+.programmer p{
+    margin: 0px 0px 30px 0px;
+}
+
+.programmerImg{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 100px;
+    transition: opacity 0.5s ease;
+}
+
+.programmerImg:hover {
+    transform: scale(1.04); /* Forstørrer ved hover */
+}

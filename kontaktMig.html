@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt mig</title>
+    <link rel="stylesheet" href="https://use.typekit.net/dql1dpg.css"> <!--Henter fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/dql1dpg.css"> <!-- -//- -->
+    <link rel="stylesheet" href="kontaktMig.css"> <!--Link til css-->
+    <script src="script.js"></script> <!-- Link til din JavaScript-fil -->
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <!-- Burgermenu -->
+    <nav>
+        <!-- Menu knap -->
+        <div class="menu-knap" onclick="toggleMenu()">
+            <div class="linje"></div>
+            <div class="linje"></div>
+            <div class="linje"></div>
+        </div>
+
+        <!-- Menucontainer til menupunkter -->
+        <div id="menu" class="menu skjult">
+            <ul>
+                <!--Linker til undermenupunkterne-->
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="omMig.html">Lær mig at kende</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="kontaktMig.html">Kontakt mig</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="kontaktMig">
+        <article class="kontakt-tekst">
+        <p>Interesseret i et samarbejde?</p>
+        <h1>Kontakt <br> mig!</h1>
+
+        <p>Email: Claire87@hotmail.dk</p>
+        <p>Tlf nr: 60225660</p>
+        <p>Linked in: Claire Kahindi</p>
+
+        <p id="cta">Ser frem til at høre fra dig!</p>
+        
+
+        <p id="bloopers">
+            <img src="images/pilElevator.webp" alt="Sort pil">
+            *bloopers*
+        </p>
+        </article>
+
+        <div class="elevator-side">
+            <video class="elevator-dor" autoplay loop muted playsinline>
+                <source src="bloopers_1.mp4" type="video/mp4"> <!--Linker til videoen-->
+                Din browser understøtter ikke videoafspilning.
+                <!--Tilføjer damagekontrol, hvis videoen ikke kan afspilles-->
+            </video>
+        </div>
+    </section>
+
+
+    <!-- FOOTER-->
+
+    <footer>
+
+        <aside class="footer-generelt">
+
+            <!-- Laver en kolonne med sitets indhold  -->
+            <figure class="kolonne">
+                <!--Linker til undersiderne-->
+                <p><a href="index.html">Forside</a></p>
+                <p><a href="omMig.html">Hvem er jeg?</a></p>
+                <p><a href="projekter.html">Projekter</a></p>
+                <p><a href="kontaktMig.html">Kontakt mig</a></p>
+            </figure>
+
+            <!-- 'Logo'/CK section -->
+            <figure class="footer-logo"><!-- Logo - som linker til forsiden -->
+                <a href="index.html"></a>
+                <p>CK</p>
+            </figure>
+
+        </aside>
+
+    </footer>
+
+
+</body>
+
+</html>

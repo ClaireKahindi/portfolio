@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portolio forside</title>
+    <link rel="stylesheet" href="https://use.typekit.net/dql1dpg.css"> <!--Henter fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/dql1dpg.css"> <!-- -//- -->
+    <link rel="stylesheet" href="forside.css"> <!--Link til css-->
+    <script src="script.js"></script> <!-- Link til din JavaScript-fil -->
+
+
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <!-- Burgermenu -->
+    <nav>
+        <!-- Menu knap -->
+        <div class="menu-knap" onclick="toggleMenu()">
+            <div class="linje"></div>
+            <div class="linje"></div>
+            <div class="linje"></div>
+        </div>
+
+        <!-- Menucontainer til menupunkter -->
+        <div id="menu" class="menu skjult">
+            <ul>
+                <!--Linker til undermenupunkterne-->
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="omMig.html">Lær mig at kende</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="kontaktMig.html">Kontakt mig</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!--  FØRSTE TOUCHPOINT - VIDEO DEL -->
+    <section class="videoSektion">
+        <article class="velkomst-tekst">
+            <h1>Hej,<br>Jeg hedder<br>Claire Kahindi</h1>
+            <h2>& velkommen til mit portfolio</h2>
+        </article>
+
+        <!-- Scroll pil -->
+        <div class="scroll-pil" onclick="scrollTilSektion()">
+            <!-- Javascript funktion, starter når man klikker på pilen-->
+            <!-- SVG-kode, som tegner en pil - Definerer selve pilens form som to streger-->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+            </svg>
+        </div>
+
+
+
+
+        <!-- Video -->
+        <div class="elevator-side">
+            <video class="elevator-dor" autoplay loop muted playsinline>
+                <source src="elevator1_1.mp4" type="video/mp4"> <!--Linker til videoen-->
+                Din browser understøtter ikke videoafspilning.
+                <!--Tilføjer damagekontrol, hvis videoen ikke kan afspilles-->
+            </video>
+        </div>
+    </section>
+
+
+    <!-- ANDET TOUCHPOINT - VELKOMMEN TIL SEKTION -->
+
+
+    <section class="introduktion">
+
+        <section class="v-side">
+            <!--Indsætter portraet og giver det en alt attribut, for brugervenlighed-->
+            <img src="images/portraet.webp" alt="Billede af mig, Claire Kahindi, som læner sig på min hånd">
+        </section>
+
+        <article class="h-side">
+            <h2>Velkommen <br> til!</h2>
+            <p>Hej og velkommen til. Jeg hedder som sagt Claire og dette er mit portfolio. Jeg er UX design entusiask
+                med en passion for at skabe æstetiske og funktionelle løsninger, der er optimeret efter brugerbehov. Jeg
+                er på nuværende tidspunkt på 3. semester af Multimediedesign på Erhvervsakademiet Aarhus, og næste
+                semester skal jeg ud i praktik – og håber, at I bliver min kommende praktikplads!</p>
+            <p>Klik rundt og undersøg, hvad jeg har at byde på!</p>
+
+            <a href="omMig.html">
+                <button> Hvem er jeg?</button>
+            </a>
+
+
+        </article>
+
+    </section>
+
+
+
+
+    <!-- TREDJE TOUCHPOINT - MAPPE DEL -->
+
+    <section class="indhold">
+        <section>
+            <a href="omMig.html"> <!-- Linker til 'om mig' undersiden -->
+                <img src="images/mappebeskaaret.webp" alt="Billede af en blå mappe, animeret">
+            </a>
+            <h2>HVEM ER JEG?</h2>
+            <p>Lad mig introducere mig selv og give dig et indblik i, hvad der driver mig, både fagligt og personligt.
+                Sammen kan vi finde ud af, om jeg er det rette match til dit team.</p>
+        </section>
+
+        <section>
+            <a href="projekter.html"> <!-- Linker til 'projekter' undersiden -->
+                <img src="images/mappebeskaaret.webp" alt="Billede af en blå mappe, animeret">
+            </a>
+            <h2>PROJEKTER</h2>
+            <p>Her finder du et udvalg af mine projekter - skabt både individuelt og i samarbejde med andre – gennem min
+                uddannelse og i min fritid. </p>
+        </section>
+
+        <section>
+            <a href="kontaktMig.html"> <!-- Linker til 'kontakt mig' undersiden -->
+                <img src="images/mappebeskaaret.webp" alt="Billede af en blå mappe, animeret">
+            </a>
+            <h2>KONTAKT MIG</h2>
+            <p>Interesseret i et samarbejde eller sidder du inde med et spørgsmål? Tøv endelig ikke med at kontakte mig.
+            </p>
+        </section>
+
+    </section>
+
+
+
+    <!-- FOOTER-->
+
+    <footer>
+
+        <aside class="footer-generelt">
+
+            <!-- Laver en kolonne med sitets indhold  -->
+            <figure class="kolonne">
+                <!--Linker til undersiderne-->
+                <p><a href="index.html">Forside</a></p>
+                <p><a href="omMig.html">Hvem er jeg?</a></p>
+                <p><a href="projekter.html">Projekter</a></p>
+                <p><a href="kontaktMig.html">Kontakt mig</a></p>
+            </figure>
+
+            <!-- 'Logo'/CK section -->
+            <figure class="footer-logo"><!-- Logo - som linker til forsiden -->
+                <a href="index.html"></a>
+                <p>CK</p>
+            </figure>
+
+        </aside>
+
+    </footer>
+
+
+</body>
+
+</html>
+
+
+<!-- SIDEN ER VALIDERET - ALT OK!-->
+<!-- Kun 'problem' med knappen, men dette vurderes ikke afgørende-->
