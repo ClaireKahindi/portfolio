@@ -1,8 +1,10 @@
 /*Resetter grundlæggende styling*/
 * {
-    margin: 0; /* Fjerner al margin og padding */
+    margin: 0;
+    /* Fjerner al margin og padding */
     padding: 0;
-    color: #000; /*Sætter skriftfarven til sort*/
+    color: #000;
+    /*Sætter skriftfarven til sort*/
 }
 
 
@@ -11,13 +13,13 @@
 :root {
     --baggrunds-farve: #FFFAEB;
     --kontrast-farve: #FFEFBC;
-    --cta-farve: #EED584; 
+    --cta-farve: #EED584;
     --hover-farve: #B28D4A;
     --h1-font-family: 'mr-gabe', sans-serif;
     --h2-font-family: 'mr-gabe', sans-serif;
-    --h3-font-family: 'Neue',sans-serif;
+    --h3-font-family: 'Neue', sans-serif;
     --skriftfarve: #000;
-  }
+}
 
 
 
@@ -25,7 +27,7 @@
 /*Tilpasser vægt og størrelse*/
 h1 {
     font-weight: bold;
-    font-size: 70px; 
+    font-size: 70px;
 }
 
 
@@ -37,10 +39,10 @@ h2 {
 }
 
 
-h3{
+h3 {
     font-weight: 75;
 }
-  
+
 p {
     font-family: 'Neue', sans-serif;
     font-weight: 45;
@@ -51,41 +53,54 @@ p {
 
 /* Styler bodyen*/
 body {
-    background-color:var(--baggrunds-farve); 
-    overflow-x: hidden; /* Sørger for man ikke kan scroll horisontalt*/
-  }
+    background-color: var(--baggrunds-farve);
+    overflow-x: hidden;
+    /* Sørger for man ikke kan scroll horisontalt*/
+}
 
 
 /*    NAVIGATIONS'BAR'   */
 
 /* Styler selve knappen */
 .menu-knap {
-    position: absolute; /* Placer knappen absolut i forhold til nærmeste forælder */
-    top: 30px; /* Placerer burgermenuen */
-    left: 30px; /* -//- */
-    cursor: pointer; /* Ændrer markøren til en hånd ved hover */
-    z-index: 100; /* Giver det et Z-index, så det placeres øverst */
-    position: fixed; /* Sørger for knappen følger med, når man scroller */
+    position: absolute;
+    /* Placer knappen absolut i forhold til nærmeste forælder */
+    top: 30px;
+    /* Placerer burgermenuen */
+    left: 30px;
+    /* -//- */
+    cursor: pointer;
+    /* Ændrer markøren til en hånd ved hover */
+    z-index: 100;
+    /* Giver det et Z-index, så det placeres øverst */
+    position: fixed;
+    /* Sørger for knappen følger med, når man scroller */
 }
 
 /* Styler linjerne på knappen */
 .menu-knap .linje {
-    width: 30px; /* Styler linjerne, på burgermenuen */
-    height: 2px; /* -//- */
-    background-color: #000; /* Vælger farve */
-    margin: 7px 0; /* Tilføjer margin øverst, mellem linjerne */
+    width: 30px;
+    /* Styler linjerne, på burgermenuen */
+    height: 2px;
+    /* -//- */
+    background-color: #000;
+    /* Vælger farve */
+    margin: 7px 0;
+    /* Tilføjer margin øverst, mellem linjerne */
     transition: 0.4s;
 }
 
 /* Skjuler menuen som standard */
 .menu {
-    display: none; /* Menu skjules som standard */
+    display: none;
+    /* Menu skjules som standard */
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--kontrast-farve); /* Baggrundsfarve */
+    background-color: var(--kontrast-farve);
+    /* Baggrundsfarve */
     z-index: 99;
     padding: 50px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
@@ -110,34 +125,40 @@ body {
 .menu ul li a {
     text-decoration: none;
     font-size: 20px;
-    font-family:'Neue',sans-serif;
+    font-family: 'Neue', sans-serif;
     font-weight: lighter;
     color: #333;
 }
 
 /* Effekter - hover */
 .menu ul li :hover {
-    transform: scale(1.04); /* Forstørrer ved hover */
-    font-weight: bold; /* Tykkelse på font ved hover */
+    transform: scale(1.04);
+    /* Forstørrer ved hover */
+    font-weight: bold;
+    /* Tykkelse på font ved hover */
 }
 
 
 /* Ændring for at indikere, at menuen er åben */
 .menu-knap.aktiv .linje {
-    background-color: var(--hover-farve); /* Ændrer farven på linjerne til kontrastfarven */
+    background-color: var(--hover-farve);
+    /* Ændrer farven på linjerne til kontrastfarven */
 }
 
 /* Animation til linjer */
 .menu-knap.aktiv .linje:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px); /* Øverste linje bliver til et kryds */
+    transform: rotate(45deg) translate(5px, 5px);
+    /* Øverste linje bliver til et kryds */
 }
 
 .menu-knap.aktiv .linje:nth-child(2) {
-    opacity: 0; /* Skjuler midterlinjen */
+    opacity: 0;
+    /* Skjuler midterlinjen */
 }
 
 .menu-knap.aktiv .linje:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px); /* Nederste linje bliver til et kryds */
+    transform: rotate(-45deg) translate(5px, -5px);
+    /* Nederste linje bliver til et kryds */
 }
 
 
@@ -149,14 +170,14 @@ body {
 
 /* MIDERSTE TEKST */
 
-.projekter{
+.projekter {
     display: flex;
     height: 100vh;
 }
 
 
 
-.v-side{
+.v-side {
     flex-grow: 2;
     margin: 120px 100px 0px 100px;
 }
@@ -177,7 +198,7 @@ body {
     background-color: var(--kontrast-farve);
 }
 
-.h-side{
+.h-side {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -186,7 +207,8 @@ body {
 }
 
 .h-side img:hover {
-    transform: scale(1.04); /* Forstørrer ved hover */
+    transform: scale(1.04);
+    /* Forstørrer ved hover */
 }
 
 /*Justerer billede størrelser */
@@ -222,14 +244,15 @@ body {
 
 
 
-/*    FOOTER   */ 
+/*    FOOTER   */
 
-footer{
+footer {
     background-color: var(--kontrast-farve);
     padding: 5%;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    /* Skyggeeffekt */
 
- }
+}
 
 /* Styling - footer */
 .footer-generelt {
@@ -251,26 +274,31 @@ footer{
 
 /* Placering - kolonnerne med tekst*/
 .kolonne {
-    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen og at hver boks fylder lige meget */
-    text-align: left; /* Venstrejusterer kolonen */
+    flex: 1;
+    /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen og at hver boks fylder lige meget */
+    text-align: left;
+    /* Venstrejusterer kolonen */
     padding: 0 40px 0 40px;
 }
 
 
 /* Styling - underpunkter, i kolonnerne*/
 .kolonne p {
-    padding-top: 12px; /*Afstand mellem teksterne*/
+    padding-top: 12px;
+    /*Afstand mellem teksterne*/
     font-size: 16px;
 }
 
 .kolonne p a {
-    padding-top: 17px; /*Afstand mellem tekst*/
+    padding-top: 17px;
+    /*Afstand mellem tekst*/
     text-decoration: none;
 }
 
 /* Effekter - hover */
 .kolonne p :hover {
-    transform: scale(1.04); /* Forstørrer ved hover */
-    font-weight: bold; /* Tykkelse på font ved hover */
+    transform: scale(1.04);
+    /* Forstørrer ved hover */
+    font-weight: bold;
+    /* Tykkelse på font ved hover */
 }
-

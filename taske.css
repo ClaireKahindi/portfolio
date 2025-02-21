@@ -275,14 +275,16 @@ button:hover {
     text-align: left;
 }
 
-#struktur img, #rejser img, #familieliv img {
+#struktur img,
+#rejser img,
+#familieliv img {
     width: 20vh;
     margin-bottom: 0px;
 }
 
-#kreativitet img, #musik img, #traening img {
+#kreativitet img,
+#musik img,
+#traening img {
     width: 15vh;
     margin-bottom: 0px;
 }
-
-

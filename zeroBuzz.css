@@ -1,10 +1,11 @@
-
 /*Resetter grundlæggende styling*/
 * {
-    margin: 0; /* Fjerner al margin og padding */
+    margin: 0;
+    /* Fjerner al margin og padding */
     padding: 0;
     line-height: 2;
-    color: #000; /*Sætter skriftfarven til sort*/
+    color: #000;
+    /*Sætter skriftfarven til sort*/
 }
 
 
@@ -13,33 +14,33 @@
 :root {
     --baggrunds-farve: #FFFAEB;
     --kontrast-farve: #FFEFBC;
-    --cta-farve: #EED584; 
+    --cta-farve: #EED584;
     --hover-farve: #B28D4A;
     --h1-font-family: 'mr-gabe', sans-serif;
     --h2-font-family: 'mr-gabe', sans-serif;
-    --h3-font-family: 'Neue',sans-serif;
+    --h3-font-family: 'Neue', sans-serif;
     --skriftfarve: #000;
-  }
+}
 
 
 /*Tilpasser vægt og størrelse*/
 
 h1 {
     font-weight: bold;
-    font-size: 90px; 
+    font-size: 90px;
 }
 
 
 
 h2 {
     font-weight: bold;
-    font-size: 100px; 
+    font-size: 100px;
 }
 
-h3{
+h3 {
     font-weight: 75;
 }
-  
+
 p {
     font-family: 'Neue', sans-serif;
     font-weight: 45;
@@ -49,33 +50,36 @@ p {
 /* Styler bodyen*/
 body {
     background-color: var(--baggrunds-farve);
-    overflow-x: hidden; /* Sørger for man ikke kan scroll horisontalt*/
-  }
+    overflow-x: hidden;
+    /* Sørger for man ikke kan scroll horisontalt*/
+}
 
 
 /* Styler knapperne */
 button {
-    background-color: var(--cta-farve); 
-    color: #333; 
-    padding: 10px 110px; 
-    border: none; 
-    border-radius: 50px; 
-    font-size: 16px; 
+    background-color: var(--cta-farve);
+    color: #333;
+    padding: 10px 110px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
     cursor: pointer;
     margin-top: 25px;
-    transition: all 0.3s ease; /* Tilføjer en transition, for at muliggøre hover */
+    transition: all 0.3s ease;
+    /* Tilføjer en transition, for at muliggøre hover */
 }
 
 /* Tilføjer hover funktion */
 button:hover {
-    background-color: var(--hover-farve); /*Vælger farven den ændres til ved hover*/
+    background-color: var(--hover-farve);
+    /*Vælger farven den ændres til ved hover*/
     color: #FFF;
 }
 
 
-  
 
-  .forside-container {
+
+.forside-container {
     display: flex;
     height: 100vh;
     width: 100%;
@@ -87,32 +91,44 @@ button:hover {
 
 /* Styler selve knappen */
 .menu-knap {
-    position: absolute; /* Placer knappen absolut i forhold til nærmeste forælder */
-    top: 30px; /* Placerer burgermenuen */
-    left: 30px; /* -//- */
-    cursor: pointer; /* Ændrer markøren til en hånd ved hover */
-    z-index: 100; /* Giver det et Z-index, så det placeres øverst */
-    position: fixed; /* Sørger for knappen følger med, når man scroller */
+    position: absolute;
+    /* Placer knappen absolut i forhold til nærmeste forælder */
+    top: 30px;
+    /* Placerer burgermenuen */
+    left: 30px;
+    /* -//- */
+    cursor: pointer;
+    /* Ændrer markøren til en hånd ved hover */
+    z-index: 100;
+    /* Giver det et Z-index, så det placeres øverst */
+    position: fixed;
+    /* Sørger for knappen følger med, når man scroller */
 }
 
 /* Styler linjerne på knappen */
 .menu-knap .linje {
-    width: 30px; /* Styler linjerne, på burgermenuen */
-    height: 2px; /* -//- */
-    background-color: #000; /* Vælger farve */
-    margin: 7px 0; /* Tilføjer margin øverst, mellem linjerne */
+    width: 30px;
+    /* Styler linjerne, på burgermenuen */
+    height: 2px;
+    /* -//- */
+    background-color: #000;
+    /* Vælger farve */
+    margin: 7px 0;
+    /* Tilføjer margin øverst, mellem linjerne */
     transition: 0.4s;
 }
 
 /* Skjuler menuen som standard */
 .menu {
-    display: none; /* Menu skjules som standard */
+    display: none;
+    /* Menu skjules som standard */
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--kontrast-farve); /* Baggrundsfarve */
+    background-color: var(--kontrast-farve);
+    /* Baggrundsfarve */
     z-index: 99;
     padding: 50px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
@@ -137,34 +153,40 @@ button:hover {
 .menu ul li a {
     text-decoration: none;
     font-size: 20px;
-    font-family:'Neue',sans-serif;
+    font-family: 'Neue', sans-serif;
     font-weight: lighter;
     color: #333;
 }
 
 /* Effekter - hover */
 .menu ul li :hover {
-    transform: scale(1.04); /* Forstørrer ved hover */
-    font-weight: bold; /* Tykkelse på font ved hover */
+    transform: scale(1.04);
+    /* Forstørrer ved hover */
+    font-weight: bold;
+    /* Tykkelse på font ved hover */
 }
 
 
 /* Ændring for at indikere, at menuen er åben */
 .menu-knap.aktiv .linje {
-    background-color: var(--hover-farve); /* Ændrer farven på linjerne til kontrastfarven */
+    background-color: var(--hover-farve);
+    /* Ændrer farven på linjerne til kontrastfarven */
 }
 
 /* Animation til linjer */
 .menu-knap.aktiv .linje:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px); /* Øverste linje bliver til et kryds */
+    transform: rotate(45deg) translate(5px, 5px);
+    /* Øverste linje bliver til et kryds */
 }
 
 .menu-knap.aktiv .linje:nth-child(2) {
-    opacity: 0; /* Skjuler midterlinjen */
+    opacity: 0;
+    /* Skjuler midterlinjen */
 }
 
 .menu-knap.aktiv .linje:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px); /* Nederste linje bliver til et kryds */
+    transform: rotate(-45deg) translate(5px, -5px);
+    /* Nederste linje bliver til et kryds */
 }
 
 
@@ -173,86 +195,93 @@ button:hover {
 
 /*   INTRODUKTION TIL PROJEKTET - DELEN */
 
-.introduktion, .proces, .vIdentitet{
+.introduktion,
+.proces,
+.vIdentitet {
     display: flex;
     height: 100vh;
 }
 
-.v-side1{
-    background-color: var(--kontrast-farve); /* Gul farve */
+.v-side1 {
+    background-color: var(--kontrast-farve);
+    /* Gul farve */
     padding: 90px 100px 0px 60px;
 }
 
 
-.h-side1{
+.h-side1 {
     margin: 70px 70px 0px 50px;
 }
 
 /*Giver den en minus værdi, for at få overskrifterne til at fremstå sammenhængende, altå rykker dem tættere på hinanden*/
-#projektNr{
+#projektNr {
     margin-bottom: -55px;
 }
 
 
-#zeroPC{
+#zeroPC {
     max-width: 75vh;
     margin-top: 0;
 }
 
-#zeroTlf{
+#zeroTlf {
     z-index: 1;
     position: absolute;
     margin: 125px 0px 0px -100px;
     max-width: 150px;
 }
 
-#billedeTekst1{
-    margin-top:30px;
+#billedeTekst1 {
+    margin-top: 30px;
 }
 
 /*Højrestiller teksten*/
-.h-side1 p{
+.h-side1 p {
     text-align: right;
     margin-top: 150px;
 }
 
 
 
-.programmerImg{
- margin: 10px 0px 0px 115px;
+.programmerImg {
+    margin: 10px 0px 0px 115px;
 }
 
 /*Tilpasser ikonerne*/
-.programmerImg img{
+.programmerImg img {
     max-width: 60px;
     max-height: 60px;
     transition: opacity 0.5s ease;
-    
+
 }
 
 
 .programmerImg img:hover {
-    transform: scale(1.04); /* Forstørrer ved hover */
+    transform: scale(1.04);
+    /* Forstørrer ved hover */
 }
 
 
 
 /*     PROCESS - DELEN   */
 
-.v-side2, .v-side3{
+.v-side2,
+.v-side3 {
     margin: 60px 90px 0px 90px;
 }
 
-.v-side2 p{
+.v-side2 p {
     margin-top: 20px;
 }
 
-.h-side2, .h-side3{
-    background-color: var(--kontrast-farve); /* Gul farve */
+.h-side2,
+.h-side3 {
+    background-color: var(--kontrast-farve);
+    /* Gul farve */
     padding: 0px 0px 0px 115px;
 }
 
-.h-side3 p{
+.h-side3 p {
     text-align: right;
     padding: 60px 60px 0px 0px;
 }
@@ -269,12 +298,13 @@ button:hover {
 
 /*Styling af billederne ved proces*/
 
-#logoProces{
+#logoProces {
     max-width: 60vh;
     margin: 40px 0px 0px 0px;
 }
 
-#zeroLow, #zeroDaase{
+#zeroLow,
+#zeroDaase {
     max-height: 50vh;
     margin: 10px;
 }
@@ -285,43 +315,45 @@ button:hover {
 /*  VISUEL IDENTITET */
 /*Styling af billeder*/
 
-#zeroPlakat{
+#zeroPlakat {
     height: 65vh;
     max-width: 65vh;
 }
 
 
-#olKasse{
+#olKasse {
     max-width: 40vh;
     margin: 40px 70px 0 120px;
 }
 
 
-#billedeTekst{
+#billedeTekst {
     max-width: 500px;
     margin-bottom: 20px;
 }
 
 
-#varianter{
+#varianter {
     display: flex;
     flex-direction: row;
     gap: 16px;
 }
 
-#denFriske, #denSunde{
+#denFriske,
+#denSunde {
     max-height: 250px;
 }
 
 
-/*    FOOTER   */ 
+/*    FOOTER   */
 
-footer{
+footer {
     background-color: var(--kontrast-farve);
     padding: 5%;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+    /* Skyggeeffekt */
 
- }
+}
 
 /* Styling - footer */
 .footer-generelt {
@@ -343,25 +375,31 @@ footer{
 
 /* Placering - kolonnerne med tekst*/
 .kolonne {
-    flex: 1; /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen og at hver boks fylder lige meget */
-    text-align: left; /* Venstrejusterer kolonen */
+    flex: 1;
+    /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen og at hver boks fylder lige meget */
+    text-align: left;
+    /* Venstrejusterer kolonen */
     padding: 0 40px 0 40px;
 }
 
 
 /* Styling - underpunkter, i kolonnerne*/
 .kolonne p {
-    padding-top: 12px; /*Afstand mellem teksterne*/
+    padding-top: 12px;
+    /*Afstand mellem teksterne*/
     font-size: 16px;
 }
 
 .kolonne p a {
-    padding-top: 17px; /*Afstand mellem tekst*/
+    padding-top: 17px;
+    /*Afstand mellem tekst*/
     text-decoration: none;
 }
 
 /* Effekter - hover */
 .kolonne p :hover {
-    transform: scale(1.04); /* Forstørrer ved hover */
-    font-weight: bold; /* Tykkelse på font ved hover */
+    transform: scale(1.04);
+    /* Forstørrer ved hover */
+    font-weight: bold;
+    /* Tykkelse på font ved hover */
 }
