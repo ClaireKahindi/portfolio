@@ -195,22 +195,25 @@ button:hover {
 
 
 #zeroPC{
-    max-width: 90vh;
+    max-width: 75vh;
     margin-top: 0;
 }
 
 #zeroTlf{
     z-index: 1;
     position: absolute;
-    margin: 100px 0px 0px -100px;
+    margin: 125px 0px 0px -100px;
     max-width: 150px;
 }
 
+#billedeTekst1{
+    margin-top:30px;
+}
 
 /*Højrestiller teksten*/
 .h-side1 p{
     text-align: right;
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
 
@@ -260,7 +263,7 @@ button:hover {
 .v-side1,
 .v-side2,
 .v-side3 {
-    width: 50vw !important;
+    width: 50vw;
 }
 
 
@@ -268,7 +271,7 @@ button:hover {
 
 #logoProces{
     max-width: 60vh;
-    margin: 40px 120px 20px 0px;
+    margin: 40px 0px 0px 0px;
 }
 
 #zeroLow, #zeroDaase{
@@ -279,14 +282,12 @@ button:hover {
 
 
 
-
 /*  VISUEL IDENTITET */
 /*Styling af billeder*/
 
 #zeroPlakat{
     height: 65vh;
     max-width: 65vh;
-    margin: 0px 0px 0 0px;
 }
 
 
