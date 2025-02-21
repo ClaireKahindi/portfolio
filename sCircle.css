@@ -241,12 +241,15 @@ button:hover {
 .v-side2{
     flex: 1; /* Fylder halvdelen af containeren */
     background-color: var(--kontrast-farve); /* Gul farve */
-    padding: 90px 100px 0px 90px;
+    padding: 90px 0px 0px 0px;
+    width: 50%;
 }
 
 
 .h-side2{
-    margin: 70px 70px 0px 50px;
+    /* margin: 70px 70px 0px 50px; */
+    width: 50%;
+
 }
 
 .h-side2 p{

@@ -204,22 +204,31 @@ button:hover {
 /* TASKE DELEN */
 
 .v-side2{
-    margin: 110px 120px 0px 120px;
+    width: 50%;
+
 }
 
 .v-side2 p{
     max-width: 50vh;
+    margin: 40px 120px 0px 120px;
 }
 
 .h-side2{
     flex: 1; /* Fylder halvdelen af containeren */
     background-color: var(--kontrast-farve); /* Gul farve */
-    padding: 0px 100px 0px 165px;
+    width: 50%;
+
+}
+
+.v-side2 h1{
+    margin: 110px 120px 0px 120px;
+
 }
 
 #taske1{
     width: 65vh;
     transition: opacity 0.5s ease;
+    margin: 0px 0px 0px 60px;
 }
 
 #taske1:hover {
@@ -244,11 +253,17 @@ button:hover {
 .v-side3{
     flex: 1; /* Fylder halvdelen af containeren */
     background-color: var(--kontrast-farve); /* Gul farve */
-    padding: 110px 100px 0px 90px;
+    /* padding: 110px 100px 0px 90px; */
+    width: 50%;
+
 }
 
 .h-side3{
     margin: 70px 330px 0px 50px;
+}
+
+#c{
+    margin-top: 100px;
 }
 
 
@@ -256,7 +271,7 @@ button:hover {
 /*  HVAD SØGER JEG */
 
 .v-side4{
-    margin: 110px 350px 0px 120px;
+    width: 50%;
 }
 
 
@@ -274,9 +289,8 @@ button:hover {
 
 #portraet2{
     position: absolute;
-    z-index: 1; /*Tilføjer Z-index, så billedet placeres øverst*/
     max-width: 50vh;
-    margin: 0px 0px 0px 50px;
+    margin: 90px 0px 0px 150px;
 }
 
 
@@ -299,7 +313,7 @@ button:hover {
     transition: opacity 0.5s ease;
 }
 
-.programmerImg:hover {
+.programmerImg img:hover {
     transform: scale(1.04); /* Forstørrer ved hover */
 }
 
