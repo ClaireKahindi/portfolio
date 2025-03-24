@@ -93,7 +93,7 @@ button:hover {
 
 
 
-/*    NAVIGATIONS'BAR'   */
+/*  ---------- BURGERMENUEN --------  */
 
 /* Styler selve knappen */
 .menu-knap {
@@ -136,7 +136,7 @@ button:hover {
     background-color: var(--kontrast-farve);
     /* Baggrundsfarve */
     z-index: 99;
-    padding: 50px;
+    padding: 90px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -158,12 +158,22 @@ button:hover {
 
 .menu ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 3vw;
     font-family: 'Neue', sans-serif;
     font-weight: lighter;
     color: #333;
+    padding-left: 25px;
 }
 
+.menu-item{
+    font-family: 'Neue', sans-serif;
+    font-size: 3vw;
+    font-weight: lighter;
+}
+
+
+
+/* ---- MENU EFFEKTER ---*/
 /* Effekter - hover */
 .menu ul li :hover {
     transform: scale(1.04);
@@ -195,6 +205,10 @@ button:hover {
     /* Nederste linje bliver til et kryds */
 }
 
+
+.menu-item span {
+    pointer-events: none; /* Deaktiverer al interaktion */
+}
 
 
 /* TASKE WRAP STYLING */

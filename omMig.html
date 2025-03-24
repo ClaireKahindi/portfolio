@@ -15,9 +15,8 @@
 
 <body>
 
-    <!-- HEADER -->
-    <!-- Burgermenu -->
-    <nav>
+       <!-- Burgermenu -->
+       <nav>
         <!-- Menu knap -->
         <div class="menu-knap" onclick="toggleMenu()">
             <div class="linje"></div>
@@ -29,13 +28,14 @@
         <div id="menu" class="menu skjult">
             <ul>
                 <!--Linker til undermenupunkterne-->
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="omMig.html">Lær mig at kende</a></li>
-                <li><a href="projekter.html">Projekter</a></li>
-                <li><a href="kontaktMig.html">Kontakt mig</a></li>
+                <li class="menu-item"><span>NO. 1</span> <a href="index.html">Forside</a></li>
+                <li class="menu-item"><span>NO. 2</span> <a href="omMig.html">Lær mig at kende</a></li>
+                <li class="menu-item"><span>NO. 3</span> <a href="projekter.html">Projekter</a></li>
+                <li class="menu-item"><span>NO. 4</span> <a href="kontaktMig.html">Kontakt mig</a></li>
             </ul>
         </div>
     </nav>
+
 
 
 
@@ -154,30 +154,21 @@
         </div>
     </section>
 
-    <!-- FOOTER-->
+   
+   <!-- FOOTER-->
 
-    <footer>
+   <footer>
 
-        <aside class="footer-generelt">
+    <aside class="Fkolonne">
+        <p id="tlfnr">
+            <a href="tel:+4560225660">+45 60 22 56 60</a>
+        </p>
+        <p id="email">
+            <a href="mailto:Claire87@hotmail.dk">Claire87@hotmail.dk</a>
+        </p>
+    </aside>
 
-            <!-- Laver en kolonne med sitets indhold  -->
-            <figure class="kolonne">
-                <!--Linker til undersiderne-->
-                <p><a href="index.html">Forside</a></p>
-                <p><a href="omMig.html">Hvem er jeg?</a></p>
-                <p><a href="projekter.html">Projekter</a></p>
-                <p><a href="kontaktMig.html">Kontakt mig</a></p>
-            </figure>
-
-            <!-- 'Logo'/CK section -->
-            <figure class="footer-logo"><!-- Logo - som linker til forsiden -->
-                <a href="index.html"></a>
-                <p>CK</p>
-            </figure>
-
-        </aside>
-
-    </footer>
+</footer>
 
 </body>
 

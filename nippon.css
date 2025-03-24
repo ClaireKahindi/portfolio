@@ -87,7 +87,7 @@ button:hover {
 
 
 
-/*    NAVIGATIONS'BAR'   */
+/*  ---------- BURGERMENUEN --------  */
 
 /* Styler selve knappen */
 .menu-knap {
@@ -130,7 +130,7 @@ button:hover {
     background-color: var(--kontrast-farve);
     /* Baggrundsfarve */
     z-index: 99;
-    padding: 50px;
+    padding: 90px;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -152,12 +152,22 @@ button:hover {
 
 .menu ul li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 3vw;
     font-family: 'Neue', sans-serif;
     font-weight: lighter;
     color: #333;
+    padding-left: 25px;
 }
 
+.menu-item{
+    font-family: 'Neue', sans-serif;
+    font-size: 3vw;
+    font-weight: lighter;
+}
+
+
+
+/* ---- MENU EFFEKTER ---*/
 /* Effekter - hover */
 .menu ul li :hover {
     transform: scale(1.04);
@@ -189,6 +199,10 @@ button:hover {
     /* Nederste linje bliver til et kryds */
 }
 
+
+.menu-item span {
+    pointer-events: none; /* Deaktiverer al interaktion */
+}
 
 
 
@@ -285,61 +299,50 @@ button {
 
 
 
-/*    FOOTER   */
+/*   ------ FOOTER  ------ */
 
+
+/*Giver footeren en farve og lidt skygge*/
 footer {
-    background-color: var(--kontrast-farve);
-    padding: 5%;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
-    /* Skyggeeffekt */
+    background-color: var(--kontrast-farve); /*Tilføjer farve*/
+    border-width: 1px; /*Giver borderen en bredde*/
+    border-color: #EED584; /*Giver borderen en farve*/
+    border-style: solid; /*Gør den solid, så den vises*/
+    width: 100vw; /* 100% af viewportens bredde */
+}
+
+/*Placerer elementerne*/
+.Fkolonne {
+    padding: 2% 0 2% 4%;
+}
+
+/*Justerer linjehøjden, så teksterne er placeret tættere på hinanden*/
+.Fkolonne p{
+    line-height: 1.2;
+}
+
+/*Styler de 2 tekster*/
+#tlfnr{
+    font-family: 'Neue', sans-serif;
+    font-weight: lighter;
+    padding-top: 1%;
+    font-size: 1vw;
+}
+
+#email{
+    font-family: 'Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 2vw;
+}
+
+#tlfnr a, #email a {
+    color: inherit; /* Arver farven fra parent (så den matcher resten af teksten) */
+    text-decoration: none; /* Fjerner understregning */
+    line-height: 1.2; /*Justerer linjehøjden, så teksterne er placeret tættere på hinanden*/
 
 }
 
-/* Styling - footer */
-.footer-generelt {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Placering - styrer placeringen af logo*/
-.footer-logo {
-    display: flex;
-    font-size: 100px;
-    margin-right: 100px;
-}
-
-.footer-logo p {
-    font-family: var(--h1-font-family);
-    font-size: 100px;
-}
-
-/* Placering - kolonnerne med tekst*/
-.kolonne {
-    flex: 1;
-    /*Sikrer at elementet vil vokse til at fylde al tilgængelig plads i boksen og at hver boks fylder lige meget */
-    text-align: left;
-    /* Venstrejusterer kolonen */
-    padding: 0 40px 0 40px;
-}
-
-
-/* Styling - underpunkter, i kolonnerne*/
-.kolonne p {
-    padding-top: 12px;
-    /*Afstand mellem teksterne*/
-    font-size: 16px;
-}
-
-.kolonne p a {
-    padding-top: 17px;
-    /*Afstand mellem tekst*/
-    text-decoration: none;
-}
-
-/* Effekter - hover */
-.kolonne p :hover {
-    transform: scale(1.04);
-    /* Forstørrer ved hover */
-    font-weight: bold;
-    /* Tykkelse på font ved hover */
+#tlfnr a:hover, #email a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+    text-decoration-thickness: 1px; /* Gør linjen tyndere */
 }

@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <!-- HEADER -->
+   
 
-    <!-- Burgermenu -->
-    <nav>
+      <!-- Burgermenu -->
+      <nav>
         <!-- Menu knap -->
         <div class="menu-knap" onclick="toggleMenu()">
             <div class="linje"></div>
@@ -29,13 +29,14 @@
         <div id="menu" class="menu skjult">
             <ul>
                 <!--Linker til undermenupunkterne-->
-                <li><a href="index.html">FORSIDE</a></li>
-                <li><a href="omMig.html">LÆR MIG AT KENDE</a></li>
-                <li><a href="projekter.html">PROJEKTER</a></li>
-                <li><a href="kontaktMig.html">KONTAKT MIG</a></li>
+                <li class="menu-item"><span>NO. 1</span> <a href="index.html">Forside</a></li>
+                <li class="menu-item"><span>NO. 2</span> <a href="omMig.html">Lær mig at kende</a></li>
+                <li class="menu-item"><span>NO. 3</span> <a href="projekter.html">Projekter</a></li>
+                <li class="menu-item"><span>NO. 4</span> <a href="kontaktMig.html">Kontakt mig</a></li>
             </ul>
         </div>
     </nav>
+
 
 
 
@@ -138,22 +139,16 @@
 
     <footer>
 
-        <aside class="footer-generelt">
-
-        
-            <figure class="kolonne">
-                <!--Linker til undersiderne-->
-                <!-- <h2>+45 60 22 56 60 </h2>
-                <h1>Claire87@hotmail.dk</h1> -->
-                <p><a href="index.html">Forside</a></p>
-                <p><a href="omMig.html">Hvem er jeg?</a></p>
-                <p><a href="projekter.html">Projekter</a></p>
-                <p><a href="kontaktMig.html">Kontakt mig</a></p>
-            </figure>
-
+        <aside class="Fkolonne">
+            <p id="tlfnr">
+                <a href="tel:+4560225660">+45 60 22 56 60</a>
+            </p>
+            <p id="email">
+                <a href="mailto:Claire87@hotmail.dk">Claire87@hotmail.dk</a>
+            </p>
         </aside>
 
-    </footer>
+</footer>
 
 
 </body>
