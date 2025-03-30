@@ -176,6 +176,11 @@ body {
 }
 
 
+
+
+
+
+
 /*  KONTAKT MIG - DELEN  */
 
 .kontaktMig {
@@ -203,6 +208,18 @@ body {
     margin: 100px 0px 10px 100px;
 }
 
+
+.kontakt-tekst p a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+    text-decoration-thickness: 1px; /* Gør linjen tyndere */
+}
+
+
+.kontakt-tekst a{
+text-decoration: none; /* Fjerner understregning */
+}
+
+
 #cta {
     margin-top: 50px;
 }
@@ -222,10 +239,9 @@ body {
     margin-left: 40px;
 }
 
-
-
-
-
+.scroll-pil{
+    display: none;
+}
 
 /*   ------ FOOTER  ------ */
 
@@ -274,4 +290,135 @@ footer {
 #tlfnr a:hover, #email a:hover {
     text-decoration: underline; /* Understregning ved hover */
     text-decoration-thickness: 1px; /* Gør linjen tyndere */
+}
+
+
+
+/* RESPONSIVT DESIGN */
+
+/* Mobile version - Media Queries */
+
+/* --------------- For små skærme (som telefoner) --------------- */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 70px; /* Mindre skriftstørrelse */
+    }
+
+    h2 {
+        font-size: 5vw; /* Mindre tekst til mobil */
+    }
+
+    p {
+        font-size: 16px; /* Reducer tekststørrelse */
+    }
+
+    .menu ul li a {
+        font-size: 5vw; /* Skift menuen til mindre skrift */
+    }
+
+    /* Burger menu - for mobil */
+    .menu-knap {
+        top: 20px; /* Tilpas positionen af menuen */
+        left: 20px;
+    }
+
+    /* KontaktMig layout til mobil */
+    .kontaktMig {
+        display: block;
+        padding: 20px;
+        padding: 10vh 0 0 5vh;
+    }
+
+    .kontakt-tekst {
+        font-size: 5vw; /* Mindre tekst */
+        margin: 20px 0; /* Juster margin for små skærme */
+    }
+
+    /* Elevator video skal fylde hele skærmen */
+    .elevator-dor {
+        height: 100vh; /* Fylder hele højden på mobilen */
+        width: 100vw;
+    }
+
+    /* Footer tilpasning på mobil */
+    .Fkolonne {
+        padding: 5vh 2vh;
+    }
+
+    #tlfnr, #email {
+        font-size: 4vw; /* Mindre skriftstørrelse på mobil */
+    }
+
+#bloopers{
+    display: flex;
+    justify-content: center;  /* Centrerer vandret */
+    align-items: center;      /* Centrerer lodret */
+    text-align: center;
+    padding: 0;
+    z-index: 900;
+}
+
+    
+}
+
+/* --------------- For ekstra små skærme (som små telefoner) --------------- */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 70px; /* Yderligere reduktion af tekststørrelse */
+    }
+
+    .menu ul li a {
+        font-size: 7vw; /* Skaler menuen til endnu mindre skærme */
+    }
+
+    .kontakt-tekst {
+        font-size: 6vw; /* Reducer tekststørrelse yderligere på de mindste skærme */
+    }
+
+    .elevator-dor {
+        height: 100vh; /* Fylder hele skærmen */
+        width: 100vw;
+    }
+
+    .Fkolonne {
+        padding: 5% 3%;
+    }
+
+    #bloopers{
+        display: flex;
+        justify-content: center;  /* Centrerer vandret */
+        align-items: center;      /* Centrerer lodret */
+        text-align: center;
+        padding: 10px 40px 0px 10px;
+        z-index: 900;
+    }
+    
+    #bloopers img{
+        display: none;
+    }
+
+.scroll-pil{
+    display: block;
+}
+
+
+
+ /*Scroll pil*/
+.scroll-pil {
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.scroll-pil svg {
+    width: 20px;
+    height: 20px;
+    animation: bounce 2s infinite;
+}
+
+   
 }
