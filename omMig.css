@@ -46,6 +46,8 @@ p {
     font-weight: 45;
     margin-top: 20px;
     line-height: 2;
+    font-size: 20px;
+
 }
 
 /* Styler bodyen*/
@@ -203,11 +205,23 @@ button:hover {
 
 
 
+#pil{
+    display: flex;
+    z-index: 900;
+    padding-left: 2vw;
+}
+
+#pil p{
+    font-size: 10px;
+    text-decoration: none;
+}
 
 
 
 
-/* BESKRIVELSE AF MIG DELEN */
+
+
+/* ---------- BESKRIVELSE AF MIG DELEN -------- */
 
 .omMig,
 .taske,
@@ -217,16 +231,24 @@ button:hover {
     height: 100vh;
 }
 
-.v-side1 {
-    flex: 1;
-    /* Fylder halvdelen af containeren */
+
+#introMig{
+    margin: 100px 0 0 130px;
+}
+
+#introMig h2{
+    font-style: normal;
+    font-family: 'Neue', sans-serif;
+    font-size: 30px;
+}
+
+.v-side1{
+    width: 50%;
     background-color: var(--kontrast-farve);
-    /* Gul farve */
-    padding: 120px 0px 0px 120px;
 }
 
 .v-side1 p {
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .h-side1 {
@@ -237,11 +259,16 @@ button:hover {
     position: absolute;
     z-index: 1;
     max-width: 50vh;
-    margin: 100px 30px 30px 850px;
+    margin: 100px 30px 30px 900px;
 }
 
 
-/* TASKE DELEN */
+
+
+
+
+
+/* --------- WHAT'S IN MY BAG -------- */
 
 .v-side2 {
     width: 50%;
@@ -287,45 +314,23 @@ button:hover {
 }
 
 
-/* TIDSLINJE DELEN */
-
-.tidslinje img {
-    max-width: 70vh;
-}
-
-.v-side3 {
-    flex: 1;
-    /* Fylder halvdelen af containeren */
-    background-color: var(--kontrast-farve);
-    /* Gul farve */
-    /* padding: 110px 100px 0px 90px; */
-    width: 50%;
-
-}
-
-.h-side3 {
-    margin: 70px 330px 0px 50px;
-}
-
-#c {
-    margin-top: 100px;
-}
 
 
 
-/*  HVAD SØGER JEG */
+
+
+/*  ------- 5 HURTIGE OM MIG  --------- */
 
 .v-side4 {
     width: 50%;
+    background-color: var(--kontrast-farve);
+    /* Mørkere gul farve */
 }
 
 
 .h-side4 {
     flex: 1;
-    /* Fylder halvdelen af containeren */
-    background-color: var(--kontrast-farve);
-    /* Mørkere gul farve */
-    padding: 100px 50px 0px 120px;
+    padding: 90px 50px 0px 90px;
 }
 
 /*Giver teksten whitespace*/
@@ -342,34 +347,71 @@ button:hover {
 
 
 
-/*Programmer*/
 
-.programmer {
-    margin: 120px 0 20px 60px;
+
+/*    ----- KOMPETENCER ------  */
+
+.indhold {
+    margin: 120px;
+    gap: 100px;
 }
 
-.programmer p {
-    margin: 0px 0px 30px 0px;
+.indhold h2 {
+    font-weight: bold;
+    font-size: 4vh;
+    margin-left: -55px;
+    font-style: normal;
 }
 
-.programmerImg {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin-bottom: 100px;
-    transition: opacity 0.5s ease;
+.indhold a {
+    text-decoration: none; /* Fjerner understrækningen som standard */
 }
 
-.programmerImg img:hover {
+.indhold a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+    text-decoration-thickness: 1px; /* Gør linjen tyndere */
+}
+
+
+.indhold img:hover {
     transform: scale(1.04);
     /* Forstørrer ved hover */
 }
 
+.indhold p {
+    max-width: 90vw;
+    margin-left: -55px;
 
+}
+
+hr {
+    border: 0;
+    border-top: 0.5px solid #000; /* Sort streg */
+    margin: 40px 0; /* Plads omkring stregen */
+    margin-left: -55px;
+  }
+
+  #Kompetencer {
+    display: flex; /* Gør #Kompetencer til en flex-container */
+    flex-wrap: wrap; /* Så de kan bryde linje og tilpasse sig responsivt */
+}
+
+
+.display {
+    flex: 1; /* Gør hver section fleksibel og deler pladsen ligeligt */
+    position: relative; 
+    text-align: left;
+}
+
+.indhold img{
+    max-width: 60px;
+    margin-left: -55px;
+    position: relative; 
+    padding: 10px 60px 0 0;
+}
 
 
 /*   ------ FOOTER  ------ */
-
 
 /*Giver footeren en farve og lidt skygge*/
 footer {
