@@ -295,38 +295,6 @@ button:hover {
 
 
 
-
-
-/*    TREDJE TOUCHPOINT - MAPPE DEL   */
-
-.indhold {
-    display: flex;
-    margin: 120px;
-    gap: 100px;
-}
-
-.indhold h2 {
-    font-weight: bold;
-    font-size: 4vh;
-    margin-left: 20px;
-}
-
-.indhold img {
-    width: 320px;
-    transition: opacity 0.5s ease;
-}
-
-.indhold img:hover {
-    transform: scale(1.04);
-    /* Forstørrer ved hover */
-}
-
-.indhold p {
-    max-width: 270px;
-    margin-left: 20px;
-}
-
-
 /*   ------ FOOTER  ------ */
 
 /*Giver footeren en farve og lidt skygge*/
@@ -350,15 +318,11 @@ footer {
 
 /*Styler de 2 tekster*/
 #tlfnr{
-    font-family: 'Neue', sans-serif;
-    font-weight: lighter;
     padding-top: 1%;
     font-size: 1vw;
 }
 
 #email{
-    font-family: 'Neue', sans-serif;
-    font-weight: lighter;
     font-size: 2vw;
 }
 
