@@ -59,8 +59,6 @@ body {
 }
 
 
-
-
 /*  ---------- BURGERMENUEN --------  */
 
 /* Styler selve knappen */
@@ -179,12 +177,6 @@ body {
 }
 
 
-
-
-
-
-
-
 /* MIDERSTE TEKST */
 .projekter {
     display: flex;
@@ -235,6 +227,9 @@ body {
 
 
 
+
+
+
 /*   ------ FOOTER  ------ */
 
 /*Giver footeren en farve og lidt skygge*/
@@ -258,15 +253,11 @@ footer {
 
 /*Styler de 2 tekster*/
 #tlfnr{
-    font-family: 'Neue', sans-serif;
-    font-weight: lighter;
     padding-top: 1%;
     font-size: 1vw;
 }
 
 #email{
-    font-family: 'Neue', sans-serif;
-    font-weight: lighter;
     font-size: 2vw;
     margin-top: 0;
 }
@@ -281,4 +272,130 @@ footer {
 #tlfnr a:hover, #email a:hover {
     text-decoration: underline; /* Understregning ved hover */
     text-decoration-thickness: 1px; /* Gør linjen tyndere */
+}
+
+
+
+
+/* --------------- For tablets (768px - 1024px) --------------- */
+@media (max-width: 1024px) {
+    .projekter {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .v-side {
+        order: -1; /* Flytter teksten øverst */
+        text-align: left; /* Flytter teksten til venstre */
+        margin: 90px 40px 40px 70px;
+    }
+
+    .h-side-wrapper {
+        width: 100vw;
+        min-height: auto;
+    }
+
+    .h-side {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .projekt-link-venstre,
+    .projekt-link-hoejre {
+        flex: 0 0 90%;
+    }
+
+    .h-side img {
+        width: 100%;
+    }
+
+    .Fkolonne {
+        align-items: flex-start; /* Holder venstre justering */
+    }
+
+    
+    #tlfnr{
+        font-size: 0.8rem;
+    }
+    
+    #email {
+        font-size: 1.3rem; /* Justerer skriftstørrelsen */
+    }
+
+
+}
+
+/* --------------- For små skærme (som telefoner) --------------- */
+@media (max-width: 768px) {
+    .v-side {
+        margin: 40px 5%;
+        text-align: left; /* Flytter teksten til venstre */
+        margin: 90px 40px 40px 70px;
+    }
+
+    .h-side {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .projekt-link-venstre,
+    .projekt-link-hoejre {
+        flex: 0 0 100%; /* Billederne fylder hele bredden */
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/* --------------- For ekstra små skærme (som små telefoner) --------------- */
+@media (max-width: 480px) {
+    .v-side {
+        margin: 60px 20px 20px 30px;
+        text-align: left; /* Flytter teksten til venstre */
+
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .h-side {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .projekt-link-venstre,
+    .projekt-link-hoejre {
+        flex: 0 0 100%;
+    }
+
+    .h-side img {
+        width: 100%;
+    }
+
+ 
+.Fkolonne {
+    align-items: center; /* Centrerer indholdet på små skærme */
+}
+
+
+#tlfnr {
+    font-size: 0.8rem;
+}
+
+#email {
+    font-size: 1rem; /* Mindre tekststørrelse på små telefoner */
+}
 }
