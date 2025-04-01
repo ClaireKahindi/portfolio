@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekter - ZeroBuzz Brew</title>
     <link rel="stylesheet" href="https://use.typekit.net/dql1dpg.css"> <!--Henter fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/dql1dpg.css"> <!-- -//- -->
     <link rel="stylesheet" href="zeroBuzz.css"> <!--Link til css-->
     <script src="script.js"></script> <!-- Link til din JavaScript-fil -->
 
 </head>
 
 <body>
-    <!-- Burgermenu -->
-    <nav>
+
+     <!-- Burgermenu -->
+     <nav>
         <!-- Menu knap -->
         <div class="menu-knap" onclick="toggleMenu()">
             <div class="linje"></div>
@@ -33,7 +35,6 @@
         </div>
     </nav>
 
-
     <!-- INTRODUKTION DELEN -->
 
     <section class="introduktion">
@@ -42,19 +43,18 @@
             <h1>ZeroBuzz Brew</h1>
             <img id="zeroPC" src="images/zeroPC.webp" alt="Macbook mockup med hjemmeside for ZeroBuzz Brew">
             <img id="zeroTlf" src="images/zeroTLF.webp" alt="iPhone mockup med hjemmeside for ZeroBuzz Brew">
-            <p id="billedeTekst1"> <strong>Løsning:</strong> Responsiv hjemmeside, som er optimeret til telefon såvel som
-                desktop. </p>
+            <p id="billedeTekst1">Min løsning bestod af en responsiv hjemmeside, som er optimeret til telefon og desktop. </p>
         </section>
 
         <section class="h-side1">
             <p>
                 <strong>Case</strong> <br>
                 Fik til opgave, at udarbejde en digital løsning for det fiktive mikrobryggeri ZeroBuzz Brew, som
-                udelukkende tilbyder alkoholfri øl. Dertil skulle vi udarbejde en visuel- og brand identitet, med
+                tilbyder alkoholfri øl. Dertil skulle vi udarbejde en visuel- og brand identitet, med
                 henblik i at appellere til målgruppen 18-35 år.
             </p>
 
-            <p><strong>Værktøjer </strong></p>
+            <p id="værktøjer"><strong>Værktøjer </strong></p>
             <div class="programmerImg">
                 <!--Indsætter billeder, giver dem alt tekster, for brugervenlighed-->
                 <img src="images/vsCode.webp" alt="logo af Visuel Studio Code">
@@ -68,9 +68,25 @@
         </section>
     </section>
 
+
+      <!-- PIL TILBAGE -->
+      <!-- <a href="din-side.html" id="pil">
+    
+        <svg width="60" height="24" viewBox="0 0 60 24" fill="none" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="55" y2="12"></line> 
+            <polyline points="15 5, 5 12, 15 19"></polyline>
+          </svg>
+          
+          
+        <p> TILBAGE TIL FORSIDEN </p>
+      </a> -->
+
+
     <!-- PROCES DELEN -->
     <section class="proces">
         <section class="v-side2">
+            <p>Forinden designprocessen udførte jeg en deskresearch og interviews for at definere målgruppens drivkraft.
+            </p>
             <p><strong>Proces</strong> <br>Efter researchen var det første skridt at skitsere. Skitserne udviklede sig
                 hurtigt gennem den agile proces, hvorefter jeg valgte farver, typografi og visuelle elementer baseret på
                 designprincipper og research. Beslutningerne samler jeg i styletiles for at fastlå retningslinjerne for
@@ -103,7 +119,7 @@
             <div id="varianter">
                 <img id="zeroPlakat" src="images/zeroPlakat.webp"
                     alt="Plakat med ZeroBuzz Brew, som hænger ude på gaden. En mand går forbi">
-                <img id="denFriske" src="images/denFriske.webp" alt="Ølvariant fra ZeroBuzz Brew - den friske">
+                <img id="denFriske" src="images/olKasse.webp" alt="Ølvariant fra ZeroBuzz Brew - den friske">
             </div>
         </section>
 
@@ -113,15 +129,19 @@
                 og det lysegule canvas. Denne kombination er valgt for at sikre høj genkendelighed, samtidig med at den
                 understøtter god læselighed. Valget er ideelt til både reklamer, som den viste plakat, og
                 emballagedesign, hvor det visuelle udtryk skaber et stærkt og sammenhængende brand.</p>
-            <img id="olKasse" src="images/olKasse.webp">
+            <aside id="varianter">
+            <img src="images/denFriske.webp" style="max-width: 20%; height: auto;">
+            <img src="images/denKlassiske.webp" style="max-width: 20%; height: auto;">
+            <img src="images/denSunde.webp" style="max-width: 20%; height: auto;">
+            </aside>
         </section>
 
     </section>
    
 
+ 
 
-
-    <!-- KOMPTENCER -->
+ <!-- KOMPTENCER -->
 
  <section class="indhold">
     <section>
@@ -177,11 +197,14 @@
 <hr>
 
 </section>
-    
 
-    <!-- FOOTER-->
 
-    <footer>
+
+
+
+     <!-- ******** FOOTER *********** -->
+
+     <footer>
 
         <aside class="Fkolonne">
             <p id="tlfnr">
