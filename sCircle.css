@@ -86,6 +86,7 @@ button:hover {
 }
 
 
+
 /*  ---------- BURGERMENUEN --------  */
 
 /* Styler selve knappen */
@@ -207,7 +208,9 @@ button:hover {
 
 
 
-/*  INTRODUKTION DELEN  */
+
+
+/*  ------------ INTRODUKTION DELEN   */
 .introduktion,
 .proces,
 .vIdentitet {
@@ -220,15 +223,18 @@ button:hover {
 }
 
 .v-side1 {
-    margin: 110px 0px 0px 120px;
+    margin: 70px 0px 0px 0px;
     width: 50%;
 }
 
 .v-side1 p {
     max-width: 100vh;
-    padding-right: 50px;
+    padding: 20px 50px 0px 60px;
 }
 
+.v-side1 h1, .programmerImg{
+    padding: 0px 50px 0px 60px;
+}
 
 .programmerImg {
     margin: 10px 0px 0px 0px;
@@ -254,26 +260,27 @@ button:hover {
     /* Fylder halvdelen af containeren */
     background-color: var(--kontrast-farve);
     /* Gul farve */
-    padding: 0px 0px 0px 70px;
+    padding: 90px 0px 0px 0px;
     width: 50%;
 }
 
 .h-side1 p {
-    margin-top: 40px;
+    margin: 70px 30px 10px 50px;
+    max-width: 50vw;
 }
 
 
 /*Styler billederne*/
 
 #scMobiler {
-    max-width: 250px;
-    margin: 100px 0px 0px 0px;
+    max-width: 275px;
+    margin: 10px 0px 0px 120px;
 }
 
 #scMobil {
     position: absolute;
-    max-width: 175px;
-    margin: 250px 350px 0px 0px;
+    max-width: 200px;
+    margin: 150px 350px 0px 0px;
 }
 
 
@@ -315,6 +322,18 @@ button:hover {
     max-height: 70vh;
 }
 
+#billedeTekst{
+    font-family: 'mr-gabe', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+
+#video-sektion{
+    display: flex;
+}
 
 
 
@@ -336,9 +355,82 @@ button:hover {
 
 #vaegte {
     width: 350px;
-    margin: 400px 0px 0px 300px;
+}
+
+#visit-kort-vaegte img{
+    display: flex;
+    flex-direction: column; /* Stabler billederne lodret */
+    gap: 5px; /* Afstand mellem dem */
+}
+
+#branding-billeder{
+    display: flex;
+    flex-direction: row; 
+}
+
+
+
+/*    TREDJE TOUCHPOINT - kompetencer   */
+
+.indhold {
+    margin: 120px;
+    gap: 100px;
+}
+
+.indhold h2 {
+    font-weight: bold;
+    font-size: 4vh;
+    margin-left: -55px;
+    font-style: normal;
+}
+
+.indhold a {
+    text-decoration: none; /* Fjerner understrækningen som standard */
+}
+
+.indhold a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+    text-decoration-thickness: 1px; /* Gør linjen tyndere */
+}
+
+
+.indhold img:hover {
+    transform: scale(1.04);
+    /* Forstørrer ved hover */
+}
+
+.indhold p {
+    max-width: 90vw;
+    margin-left: -55px;
 
 }
+
+hr {
+    border: 0;
+    border-top: 0.5px solid #000; /* Sort streg */
+    margin: 40px 0; /* Plads omkring stregen */
+    margin-left: -55px;
+  }
+
+  #Kompetencer {
+    display: flex; /* Gør #Kompetencer til en flex-container */
+    flex-wrap: wrap; /* Så de kan bryde linje og tilpasse sig responsivt */
+}
+
+
+.display {
+    flex: 1; /* Gør hver section fleksibel og deler pladsen ligeligt */
+    position: relative; 
+    text-align: left;
+}
+
+.indhold img{
+    max-width: 60px;
+    margin-left: -55px;
+    position: relative; 
+    padding: 10px 60px 0 0;
+}
+
 
 
 
