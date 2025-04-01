@@ -46,7 +46,7 @@ p {
     font-weight: 45;
     margin-top: 20px;
     line-height: 2;
-    font-size: 20px;
+    font-size: 19px;
 
 }
 
@@ -68,7 +68,7 @@ button {
     border-radius: 50px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 25px;
+    margin-top: 18px;
     transition: all 0.3s ease;
     /* Tilføjer en transition, for at muliggøre hover */
 }
@@ -233,7 +233,7 @@ button:hover {
 
 
 #introMig{
-    margin: 100px 0 0 130px;
+    margin: 100px 0 0 80px;
 }
 
 #introMig h2{
@@ -248,7 +248,7 @@ button:hover {
 }
 
 .v-side1 p {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .h-side1 {
@@ -277,7 +277,7 @@ button:hover {
 
 .v-side2 p {
     max-width: 50vh;
-    margin: 40px 120px 0px 120px;
+    margin: 40px 120px 0px 80px;
 }
 
 .h-side2 {
@@ -290,7 +290,7 @@ button:hover {
 }
 
 .v-side2 h1 {
-    margin: 110px 120px 0px 120px;
+    margin: 110px 120px 0px 80px;
 
 }
 
@@ -330,7 +330,7 @@ button:hover {
 
 .h-side4 {
     flex: 1;
-    padding: 90px 50px 0px 90px;
+    padding: 50px 50px 0px 90px;
 }
 
 /*Giver teksten whitespace*/
