@@ -360,6 +360,66 @@ button:hover {
 
 
 
+/*    TREDJE TOUCHPOINT - kompetencer   */
+
+.indhold {
+    margin: 120px;
+    gap: 100px;
+}
+
+.indhold h2 {
+    font-weight: bold;
+    font-size: 4vh;
+    margin-left: -55px;
+    font-style: normal;
+}
+
+.indhold a {
+    text-decoration: none; /* Fjerner understrækningen som standard */
+}
+
+.indhold a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+    text-decoration-thickness: 1px; /* Gør linjen tyndere */
+}
+
+
+.indhold img:hover {
+    transform: scale(1.04);
+    /* Forstørrer ved hover */
+}
+
+.indhold p {
+    max-width: 90vw;
+    margin-left: -55px;
+
+}
+
+hr {
+    border: 0;
+    border-top: 0.5px solid #000; /* Sort streg */
+    margin: 40px 0; /* Plads omkring stregen */
+    margin-left: -55px;
+  }
+
+  #Kompetencer {
+    display: flex; /* Gør #Kompetencer til en flex-container */
+    flex-wrap: wrap; /* Så de kan bryde linje og tilpasse sig responsivt */
+}
+
+
+.display {
+    flex: 1; /* Gør hver section fleksibel og deler pladsen ligeligt */
+    position: relative; 
+    text-align: left;
+}
+
+.indhold img{
+    max-width: 60px;
+    margin-left: -55px;
+    position: relative; 
+    padding: 10px 60px 0 0;
+}
 
 
 
