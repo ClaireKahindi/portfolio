@@ -44,7 +44,7 @@ h3 {
 p {
     font-family: 'Neue', sans-serif;
     font-weight: 45;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 /* Styler bodyen*/
@@ -207,24 +207,25 @@ button:hover {
 
 
 
+
 /*   INTRODUKTION TIL PROJEKTET - DELEN */
 
 .introduktion,
 .proces,
 .vIdentitet {
-    display: flex;
+    display: flex; 
     height: 100vh;
 }
 
 .v-side1 {
-    background-color: var(--kontrast-farve);
-    /* Gul farve */
+    background-color: var(--kontrast-farve); /* Gul farve */
     padding: 90px 100px 0px 60px;
+    width: 50vw;  
 }
 
 
 .h-side1 {
-    margin: 70px 70px 0px 50px;
+    margin: 70px 40px 0px 50px;
 }
 
 /*Giver den en minus værdi, for at få overskrifterne til at fremstå sammenhængende, altå rykker dem tættere på hinanden*/
@@ -241,24 +242,31 @@ button:hover {
 #zeroTlf {
     z-index: 1;
     position: absolute;
-    margin: 125px 0px 0px -100px;
+    margin: 80px 0px 0px -130px;
     max-width: 150px;
 }
 
 #billedeTekst1 {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 /*Højrestiller teksten*/
 .h-side1 p {
     text-align: right;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 
 
+ #værktøjer{
+    margin-top: 70px;
+ }
+
+
 .programmerImg {
-    margin: 10px 0px 0px 115px;
+    margin: 10px 0;
+    text-align: right;
+
 }
 
 /*Tilpasser ikonerne*/
@@ -278,6 +286,20 @@ button:hover {
 
 
 /*     PROCESS - DELEN   */
+
+#pil{
+    display: flex;
+    z-index: 900;
+    padding-left: 2vw;
+}
+
+#pil p{
+    font-size: 10px;
+    text-decoration: none;
+}
+
+
+
 
 .v-side2,
 .v-side3 {
@@ -306,7 +328,7 @@ button:hover {
 .v-side1,
 .v-side2,
 .v-side3 {
-    width: 50vw;
+    width: 50vw !important;
 }
 
 
@@ -336,8 +358,9 @@ button:hover {
 
 
 #olKasse {
-    max-width: 40vh;
+    max-width: 20vh;
     margin: 40px 70px 0 120px;
+    max-height: 250px;
 }
 
 
@@ -350,7 +373,7 @@ button:hover {
 #varianter {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 0px;
 }
 
 #denFriske,
@@ -420,6 +443,7 @@ hr {
     position: relative; 
     padding: 10px 60px 0 0;
 }
+
 
 
 
